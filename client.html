@@ -15,12 +15,18 @@
   </head>
   <body>
     <canvas id="c1"></canvas>
+    <canvas id="c2"></canvas>
   </body>
   <script src="jsmpeg/jsmpeg.min.js"></script>
   
     <script >
-      player = new JSMpeg.Player("ws://localhost:99", {
+      player = new JSMpeg.Player("ws://localhost:90", {
         canvas: document.getElementById("c1"), // Canvas should be a canvas DOM element
+      });
+
+
+      player = new JSMpeg.Player("ws://localhost:91", {
+        canvas: document.getElementById("c2"), // Canvas should be a canvas DOM element
       });
     </script>
 </html>
