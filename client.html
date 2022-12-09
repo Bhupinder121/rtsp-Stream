@@ -8,8 +8,12 @@
     <!-- <link rel="stylesheet" href="index.css">
      -->
     <style>
+      body{
+        
+      }
       canvas{
-        width: 40%;
+        
+        width:max-content;
       }
     </style>
   </head>
@@ -19,8 +23,10 @@
   <script src="jsmpeg/jsmpeg.min.js"></script>
   
     <script >
-      player = new JSMpeg.Player("ws://localhost:99", {
+      player = new JSMpeg.Player("ws://localhost:90", {
         canvas: document.getElementById("c1"), // Canvas should be a canvas DOM element
       });
+
+
     </script>
 </html>
